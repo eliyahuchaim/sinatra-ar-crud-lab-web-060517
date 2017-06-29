@@ -1,7 +1,7 @@
-<form action= <%= "/posts/#{@id}" %> method="post">
-  <p><%=@post.name%></p>
-  <p><%=@post.content%></p>
+<p><%=@post.name%></p>
+<p><%=@post.content%></p>
   <h1>Update</h1>
+<form action= <%= "/posts/#{@id}" %> method="post">
   <p>Name: <input type="text" name="post[name]" id="name" placeholder="Enter Post Name"></p>
   <p>Content: <input type="text" name="post[content]" id="content" placeholder="Enter Post Content"></p>
   <input id="hidden" type="hidden" name="_method" value="patch">
